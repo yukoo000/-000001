@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Wireless Device Company</title>
+  <title>WAVENIX ELECTRONICS</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- 明朝系フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -17,18 +17,27 @@
 
 <body>
 
-  <!-- ヘッダー -->
+  <!-- HEADER -->
+
   <header class="header">
 
     <div class="logo">
       <img src="images/logo.png" alt="logo">
     </div>
 
+    <nav class="pc-menu">
+      <a href="#">TOP</a>
+      <a href="#">COMPANY</a>
+      <a href="#">PRODUCT</a>
+      <a href="news.html">NEWS</a>
+      <a href="#">CONTACT</a>
+    </nav>
+
     <div class="hamburger" id="hamburger">
       ☰
     </div>
 
-    <nav class="menu" id="menu">
+    <nav class="mobile-menu" id="mobileMenu">
       <a href="#">TOP</a>
       <a href="#">COMPANY</a>
       <a href="#">PRODUCT</a>
@@ -38,33 +47,55 @@
 
   </header>
 
-  <!-- メインビジュアル -->
+  <!-- HERO -->
 
-  <section class="magazine-grid">
+  <section class="hero">
 
-    <div class="grid-item large">
-      <img src="https://picsum.photos/700/500">
-    </div>
+    <div class="hero-text">
 
-    <div class="grid-item tall">
-      <img src="https://picsum.photos/400/700">
-    </div>
+      <p class="sub-title">
+        SINCE 1984
+      </p>
 
-    <div class="grid-item medium">
-      <img src="https://picsum.photos/600/400">
-    </div>
+      <h1>
+        Reliable Wireless Technology
+      </h1>
 
-    <div class="grid-item medium">
-      <img src="https://picsum.photos/600/401">
+      <p class="description">
+        業務用無線機器・通信機器の開発と製造を通じ、
+        安定した通信環境を提供します。
+      </p>
+
     </div>
 
   </section>
 
-  <!-- リンクボタン -->
+  <!-- MAGAZINE GRID -->
+
+  <section class="magazine-grid">
+
+    <div class="grid-item large">
+      <img src="https://picsum.photos/900/700?1">
+    </div>
+
+    <div class="grid-item tall">
+      <img src="https://picsum.photos/500/900?2">
+    </div>
+
+    <div class="grid-item medium">
+      <img src="https://picsum.photos/800/500?3">
+    </div>
+
+    <div class="grid-item medium">
+      <img src="https://picsum.photos/800/501?4">
+    </div>
+
+  </section>
+
+  <!-- QUICK LINK -->
 
   <section class="quick-links">
 
-    <a href="#">TOP</a>
     <a href="#">COMPANY</a>
     <a href="#">PRODUCT</a>
     <a href="news.html">NEWS</a>
@@ -76,69 +107,82 @@
 
   <section class="news-section">
 
-    <h2>NEWS</h2>
-
-    <div class="news-item">
-      <a href="news.html">
-        <span>2026.05.07</span>
-        新型無線機を公開しました
-      </a>
+    <div class="section-title">
+      <h2>NEWS</h2>
     </div>
 
-    <div class="news-item">
-      <a href="news.html">
-        <span>2026.05.01</span>
-        コーポレートサイトを公開しました
+    <div class="news-list">
+
+      <a href="news.html" class="news-item">
+        <span>2026.05.07</span>
+        新型業務用無線機の公開について
       </a>
+
+      <a href="news.html" class="news-item">
+        <span>2026.05.01</span>
+        コーポレートサイト公開のお知らせ
+      </a>
+
     </div>
 
   </section>
 
-  <!-- コンテンツ -->
+  <!-- ABOUT -->
 
-  <section class="content-section">
+  <section class="about-section">
 
-    <div class="content-image">
-      <img src="https://picsum.photos/500/500">
+    <div class="about-image">
+      <img src="https://picsum.photos/700/700?5">
     </div>
 
-    <div class="content-text">
+    <div class="about-text">
+
+      <p class="mini-title">
+        COMPANY
+      </p>
 
       <h2>
-        Reliable Wireless Technology
+        通信技術を支える、
+        確かな品質。
       </h2>
 
       <p>
-        高品質な無線機器の開発・製造を行っています。
+        WAVENIX ELECTRONICSは、
+        業務用無線機器および通信関連機器の
+        開発・製造を行っています。
       </p>
 
       <p>
-        通信技術と信頼性を重視し、
-        業務用無線機器の提供を行っています。
-      </p>
-
-      <p>
-        長年培った技術力と品質管理をもとに、
-        安定した通信環境を支えます。
+        長年培ってきた技術力と品質管理を基盤に、
+        信頼性の高い製品を提供しています。
       </p>
 
     </div>
 
   </section>
 
-  <!-- フッター -->
+  <!-- FOOTER -->
 
   <footer class="footer">
 
-    <a href="#">TOP</a>
-    <a href="#">COMPANY</a>
-    <a href="#">PRODUCT</a>
-    <a href="news.html">NEWS</a>
-    <a href="#">CONTACT</a>
+    <div class="footer-logo">
+      WAVENIX ELECTRONICS
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#">TOP</a>
+      <a href="#">COMPANY</a>
+      <a href="#">PRODUCT</a>
+      <a href="news.html">NEWS</a>
+      <a href="#">CONTACT</a>
+
+    </div>
 
   </footer>
 
   <script src="script.js"></script>
 
 </body>
+
 </html>
