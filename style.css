@@ -45,9 +45,15 @@ body{
 .hamburger{
     font-size:32px;
 
-    color:#4f647c;
+    color:#005bac;
 
     cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hamburger:hover{
+    opacity:0.7;
 }
 
 /* MENU */
@@ -89,7 +95,9 @@ body{
 }
 
 .menu a:hover{
-    background:#f5f1e3;
+    background:#005bac;
+
+    color:white;
 }
 
 /* HERO GRID */
@@ -98,6 +106,20 @@ body{
     background:#4f647c;
 
     padding:70px 7%;
+
+    position:relative;
+}
+
+.hero-grid::after{
+    content:"";
+
+    display:block;
+
+    height:4px;
+
+    background:#005bac;
+
+    margin-top:30px;
 }
 
 .top-grid{
@@ -172,6 +194,10 @@ body{
     line-height:1.3;
 }
 
+.hero-text .accent{
+    color:#8fc7ff;
+}
+
 .hero-text p{
     font-size:15px;
 
@@ -229,7 +255,9 @@ body{
 }
 
 .quick-links a:hover{
-    background:#b89b4f;
+    background:#005bac;
+
+    border-color:#005bac;
 
     color:white;
 
@@ -281,9 +309,11 @@ body{
 }
 
 .news-item span{
-    color:#4f647c;
+    color:#005bac;
 
     margin-right:24px;
+
+    font-weight:600;
 }
 
 /* CONTENT */
@@ -378,6 +408,8 @@ body{
     font-family:'Noto Serif JP', serif;
 
     margin-bottom:20px;
+
+    color:#dfeeff;
 }
 
 .footer-links{
@@ -392,6 +424,12 @@ body{
     text-decoration:none;
 
     color:white;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#8fc7ff;
 }
 
 /* PAGE */
@@ -417,7 +455,7 @@ body{
 }
 
 .page-content h2{
-    color:#4f647c;
+    color:#005bac;
 
     margin:50px 0 20px;
 }
@@ -444,6 +482,12 @@ body{
     background:#f4f7fa;
 
     border:1px solid #dbe3ea;
+
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-4px);
 }
 
 .product-card img{
@@ -451,7 +495,7 @@ body{
 }
 
 .product-card h3{
-    color:#4f647c;
+    color:#005bac;
 
     padding:24px 24px 10px;
 }
