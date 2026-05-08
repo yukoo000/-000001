@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,81 +25,73 @@
       <img src="images/logo.png" alt="logo">
     </div>
 
-    <nav class="pc-menu">
-      <a href="#">TOP</a>
-      <a href="#">COMPANY</a>
-      <a href="#">PRODUCT</a>
-      <a href="news.html">NEWS</a>
-      <a href="#">CONTACT</a>
-    </nav>
-
     <div class="hamburger" id="hamburger">
       ☰
     </div>
 
-    <nav class="mobile-menu" id="mobileMenu">
+    <nav class="menu" id="menu">
+
       <a href="#">TOP</a>
-      <a href="#">COMPANY</a>
-      <a href="#">PRODUCT</a>
-      <a href="news.html">NEWS</a>
-      <a href="#">CONTACT</a>
+      <a href="#">企業情報</a>
+      <a href="#">製品</a>
+      <a href="#">ものづくり</a>
+      <a href="#">NEWS</a>
+      <a href="#">採用情報</a>
+      <a href="#">問い合わせ</a>
+
     </nav>
 
   </header>
 
-  <!-- HERO -->
+  <!-- HERO GRID -->
 
-  <section class="hero">
-
-    <div class="hero-text">
-
-      <p class="sub-title">
-        SINCE 1984
-      </p>
-
-      <h1>
-        Reliable Wireless Technology
-      </h1>
-
-      <p class="description">
-        業務用無線機器・通信機器の開発と製造を通じ、
-        安定した通信環境を提供します。
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- MAGAZINE GRID -->
-
-  <section class="magazine-grid">
+  <section class="hero-grid">
 
     <div class="grid-item large">
-      <img src="https://picsum.photos/900/700?1">
+
+      <img src="https://picsum.photos/1000/800?1">
+
+      <div class="overlay-line"></div>
+
     </div>
 
-    <div class="grid-item tall">
-      <img src="https://picsum.photos/500/900?2">
+    <div class="grid-item small">
+
+      <img src="https://picsum.photos/700/500?2">
+
+      <div class="overlay-line"></div>
+
     </div>
 
-    <div class="grid-item medium">
-      <img src="https://picsum.photos/800/500?3">
+    <div class="grid-item slider">
+
+      <img id="slider-image" src="https://picsum.photos/700/900?3">
+
+      <div class="overlay-line"></div>
+
     </div>
 
-    <div class="grid-item medium">
-      <img src="https://picsum.photos/800/501?4">
+    <div class="grid-item small">
+
+      <img src="https://picsum.photos/700/501?4">
+
+      <div class="overlay-line"></div>
+
     </div>
 
   </section>
 
-  <!-- QUICK LINK -->
+  <!-- QUICK LINKS -->
 
   <section class="quick-links">
 
-    <a href="#">COMPANY</a>
-    <a href="#">PRODUCT</a>
-    <a href="news.html">NEWS</a>
-    <a href="#">CONTACT</a>
+    <a href="#">TOP</a>
+    <a href="#">企業情報</a>
+    <a href="#">製品</a>
+    <a href="#">ものづくり</a>
+    <a href="#">NEWS</a>
+    <a href="#">採用情報</a>
+    <a href="#">問い合わせ</a>
 
   </section>
 
@@ -107,55 +99,106 @@
 
   <section class="news-section">
 
-    <div class="section-title">
-      <h2>NEWS</h2>
+    <h2>NEWS</h2>
+
+    <a href="#" class="news-item">
+
+      <span>2026.05.07</span>
+
+      新型業務用無線機を公開しました
+
+    </a>
+
+    <a href="#" class="news-item">
+
+      <span>2026.05.01</span>
+
+      コーポレートサイト公開のお知らせ
+
+    </a>
+
+    <a href="#" class="news-item">
+
+      <span>2026.04.22</span>
+
+      技術展示会出展のお知らせ
+
+    </a>
+
+  </section>
+
+  <!-- CONTENT -->
+
+  <section class="content-section">
+
+    <div class="content-card">
+
+      <img src="https://picsum.photos/900/600?5">
+
+      <div class="content-text">
+
+        <h3>企業情報</h3>
+
+        <p>
+          長年培った技術力と品質管理を基盤に、
+          信頼性の高い電子機器を製造しています。
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="news-list">
+    <div class="content-card reverse">
 
-      <a href="news.html" class="news-item">
-        <span>2026.05.07</span>
-        新型業務用無線機の公開について
-      </a>
+      <img src="https://picsum.photos/900/601?6">
 
-      <a href="news.html" class="news-item">
-        <span>2026.05.01</span>
-        コーポレートサイト公開のお知らせ
-      </a>
+      <div class="content-text">
+
+        <h3>ものづくり</h3>
+
+        <p>
+          精密な製造工程と厳格な品質検査によって、
+          安定した通信機器を提供しています。
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="content-card">
+
+      <img src="https://picsum.photos/900/602?7">
+
+      <div class="content-text">
+
+        <h3>製品</h3>
+
+        <p>
+          業務用無線機器・通信装置など、
+          多様な現場で活躍する製品を展開しています。
+        </p>
+
+      </div>
 
     </div>
 
   </section>
 
-  <!-- ABOUT -->
+  <!-- TWITTER -->
 
-  <section class="about-section">
+  <section class="twitter-section">
 
-    <div class="about-image">
-      <img src="https://picsum.photos/700/700?5">
-    </div>
+    <h2>X / 最新情報</h2>
 
-    <div class="about-text">
+    <div class="twitter-box">
 
-      <p class="mini-title">
-        COMPANY
-      </p>
+      <a class="twitter-timeline"
+      data-height="500"
+      href="https://twitter.com/TwitterDev">
 
-      <h2>
-        通信技術を支える、
-        確かな品質。
-      </h2>
+      Tweets by TwitterDev
 
-      <p>
-        WAVENIX ELECTRONICSは、
-        業務用無線機器および通信関連機器の
-        開発・製造を行っています。
-      </p>
-
-      <p>
-        長年培ってきた技術力と品質管理を基盤に、
-        信頼性の高い製品を提供しています。
-      </p>
+      </a>
 
     </div>
 
@@ -165,23 +208,37 @@
 
   <footer class="footer">
 
-    <div class="footer-logo">
-      WAVENIX ELECTRONICS
+    <div class="footer-left">
+
+      <h3>WAVENIX ELECTRONICS</h3>
+
+      <p>
+        〒000-0000 東京都〇〇区〇〇1-2-3
+      </p>
+
+      <p>
+        TEL : 00-0000-0000
+      </p>
+
     </div>
 
     <div class="footer-links">
 
       <a href="#">TOP</a>
-      <a href="#">COMPANY</a>
-      <a href="#">PRODUCT</a>
-      <a href="news.html">NEWS</a>
-      <a href="#">CONTACT</a>
+      <a href="#">企業情報</a>
+      <a href="#">製品</a>
+      <a href="#">ものづくり</a>
+      <a href="#">NEWS</a>
+      <a href="#">採用情報</a>
+      <a href="#">問い合わせ</a>
 
     </div>
 
   </footer>
 
   <script src="script.js"></script>
+
+  <script async src="https://platform.twitter.com/widgets.js"></script>
 
 </body>
 
