@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#f4f7fa;
+    background:#fcfcfc;
 
     color:#2b2b2b;
 
@@ -17,11 +17,9 @@ body{
 /* HEADER */
 
 .header{
-    background:rgba(255,255,255,0.92);
+    background:#ffffff;
 
-    backdrop-filter:blur(10px);
-
-    border-bottom:1px solid #dbe3ea;
+    border-bottom:1px solid #e4e8ec;
 
     padding:24px 7%;
 
@@ -106,12 +104,16 @@ body{
     gap:18px;
 
     padding:70px 7%;
+
+    background:#4f647c;
 }
 
 .grid-item{
     position:relative;
 
     overflow:hidden;
+
+    background:white;
 }
 
 .grid-item img{
@@ -163,7 +165,7 @@ body{
 
     gap:16px;
 
-    padding:0 7% 90px;
+    padding:90px 7%;
 }
 
 .quick-links a{
@@ -188,12 +190,20 @@ body{
     background:#b89b4f;
 
     color:white;
+
+    transform:translateY(-2px);
 }
 
 /* NEWS */
 
 .news-section{
-    padding:0 10% 120px;
+    padding:80px 10%;
+
+    margin:0 10% 120px;
+
+    background:#f4f7fa;
+
+    border:1px solid #dbe3ea;
 }
 
 .news-section h2{
@@ -247,7 +257,13 @@ body{
 
     gap:70px;
 
-    margin-bottom:100px;
+    margin-bottom:80px;
+
+    background:#f4f7fa;
+
+    padding:40px;
+
+    border:1px solid #dbe3ea;
 }
 
 .content-card.reverse{
@@ -291,7 +307,7 @@ body{
 }
 
 .twitter-box{
-    background:white;
+    background:#f4f7fa;
 
     border:1px solid #dbe3ea;
 
@@ -383,7 +399,7 @@ body{
 }
 
 .product-card{
-    background:white;
+    background:#f4f7fa;
 
     border:1px solid #dbe3ea;
 }
