@@ -11,7 +11,9 @@ body{
     line-height:1.9;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .header{
     background:#ffffff;
@@ -29,8 +31,6 @@ body{
     height:54px;
 }
 
-/* HAMBURGER */
-
 .hamburger{
     font-size:32px;
     color:#005bac;
@@ -42,7 +42,9 @@ body{
     opacity:0.7;
 }
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 .menu{
     position:absolute;
@@ -73,7 +75,9 @@ body{
     color:white;
 }
 
-/* HERO GRID */
+/* =========================
+   HERO
+========================= */
 
 .hero-grid{
     background:#4f647c;
@@ -124,6 +128,20 @@ body{
     transform:scale(1.04);
 }
 
+/* GOLD FRAME */
+
+.overlay-line{
+    position:absolute;
+    inset:18px;
+    border:1px solid rgba(184,155,79,0);
+    transition:0.4s;
+    pointer-events:none;
+}
+
+.grid-item:hover .overlay-line{
+    border:1px solid rgba(184,155,79,1);
+}
+
 /* HERO TEXT */
 
 .hero-text{
@@ -151,21 +169,9 @@ body{
     opacity:0.9;
 }
 
-/* GOLD LINE EFFECT */
-
-.overlay-line{
-    position:absolute;
-    inset:18px;
-    border:1px solid rgba(184,155,79,0);
-    transition:0.4s;
-    pointer-events:none;
-}
-
-.grid-item:hover .overlay-line{
-    border:1px solid rgba(184,155,79,1);
-}
-
-/* QUICK LINKS */
+/* =========================
+   QUICK LINKS
+========================= */
 
 .quick-links{
     display:flex;
@@ -193,7 +199,9 @@ body{
     transform:translateY(-2px);
 }
 
-/* NEWS */
+/* =========================
+   NEWS
+========================= */
 
 .news-section{
     position:relative;
@@ -231,31 +239,35 @@ body{
     font-weight:600;
 }
 
-/* NEWS CORNER */
+/* NEWS DECORATION */
 
 .news-section::before{
     content:"";
     position:absolute;
-    top:-14px;
-    left:-14px;
-    width:40px;
-    height:40px;
-    border-top:4px solid #005bac;
-    border-left:4px solid #005bac;
+    top:-22px;
+    right:-22px;
+    width:42px;
+    height:42px;
+    background:#005bac;
+    opacity:0.78;
+    z-index:3;
 }
 
 .news-section::after{
     content:"";
     position:absolute;
-    top:-4px;
-    left:-4px;
-    width:18px;
-    height:18px;
-    border-top:3px solid #b89b4f;
-    border-left:3px solid #b89b4f;
+    top:-36px;
+    right:-8px;
+    width:52px;
+    height:52px;
+    border:3px solid #b89b4f;
+    background:transparent;
+    z-index:4;
 }
 
-/* CONTENT */
+/* =========================
+   CONTENT
+========================= */
 
 .content-section{
     padding:0 10% 120px;
@@ -263,6 +275,7 @@ body{
 
 .content-card{
     position:relative;
+    overflow:visible;
     display:flex;
     align-items:center;
     gap:70px;
@@ -292,32 +305,35 @@ body{
     margin-bottom:28px;
 }
 
-/* CORNER DECORATION */
+/* FLOATING DECORATION */
 
 .content-card::before{
     content:"";
     position:absolute;
-    top:-14px;
-    right:-14px;
-    width:38px;
-    height:38px;
-    border-top:4px solid #b89b4f;
-    border-right:4px solid #b89b4f;
-    opacity:0.9;
+    top:-30px;
+    right:-30px;
+    width:58px;
+    height:58px;
+    background:#005bac;
+    opacity:0.78;
+    z-index:3;
 }
 
 .content-card::after{
     content:"";
     position:absolute;
-    top:-2px;
-    right:-2px;
-    width:28px;
-    height:28px;
-    background:#005bac;
-    opacity:0.95;
+    top:-46px;
+    right:-12px;
+    width:64px;
+    height:64px;
+    border:3px solid #b89b4f;
+    background:transparent;
+    z-index:4;
 }
 
-/* X */
+/* =========================
+   X
+========================= */
 
 .twitter-section{
     padding:0 10% 120px;
@@ -336,7 +352,9 @@ body{
     padding:30px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
     background:#4f647c;
@@ -370,7 +388,9 @@ body{
     color:#8fc7ff;
 }
 
-/* PAGE */
+/* =========================
+   PAGE
+========================= */
 
 .page-title{
     padding:120px 10% 80px;
@@ -398,7 +418,9 @@ body{
     margin-top:40px;
 }
 
-/* PRODUCT */
+/* =========================
+   PRODUCT
+========================= */
 
 .product-grid{
     display:grid;
