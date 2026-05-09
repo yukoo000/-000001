@@ -2,24 +2,21 @@
 <html lang="ja">
 
 <head>
+
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-  content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>WAVENIX ELECTRONICS</title>
+  <title>〇〇電子工業株式会社</title>
 
   <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect"
-  href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -30,26 +27,21 @@
 
     <div class="logo">
 
-      <img src="images/logo.png"
-      alt="logo">
+      <img src="images/logo.png" alt="ロゴ">
 
     </div>
 
-    <div class="hamburger"
-    id="hamburger">
-
+    <div class="hamburger" onclick="toggleMenu()">
       ☰
-
     </div>
 
-    <nav class="menu"
-    id="menu">
+    <nav class="menu" id="menu">
 
       <a href="index.html">TOP</a>
 
       <a href="company.html">企業情報</a>
 
-      <a href="products.html">製品</a>
+      <a href="products.html">製品情報</a>
 
       <a href="manufacturing.html">ものづくり</a>
 
@@ -57,13 +49,13 @@
 
       <a href="recruit.html">採用情報</a>
 
-      <a href="contact.html">問い合わせ</a>
+      <a href="contact.html">お問い合わせ</a>
 
     </nav>
 
   </header>
 
-  <!-- HERO GRID -->
+  <!-- HERO -->
 
   <section class="hero-grid">
 
@@ -71,54 +63,29 @@
 
       <!-- LEFT LARGE -->
 
-      <div class="grid-item large hero-text-box">
+      <div class="grid-item">
 
-        <img src="https://picsum.photos/1000/800?1">
+        <img src="images/hero1.jpg" alt="">
 
         <div class="overlay-line"></div>
 
-<div class="hero-text">
-
-  <h1>
-
-    <span class="accent">
-      Reliable
-    </span>
-
-    <br>
-
-    Wireless Technology
-
-  </h1>
-
-  <p>
-    精密な通信技術で、
-    安定した未来を支える。
-  </p>
-
-</div>
-
-
       </div>
 
-      <!-- RIGHT COLUMN -->
+      <!-- RIGHT -->
 
       <div class="right-column">
 
-        <div class="grid-item small">
+        <div class="grid-item">
 
-          <img src="https://picsum.photos/700/500?2">
+          <img src="images/hero2.jpg" alt="">
 
           <div class="overlay-line"></div>
 
         </div>
 
-        <!-- SLIDER -->
+        <div class="grid-item">
 
-        <div class="grid-item slider">
-
-          <img id="slider-image"
-          src="https://picsum.photos/700/900?3">
+          <img id="slide-image" src="images/hero3.jpg" alt="">
 
           <div class="overlay-line"></div>
 
@@ -128,17 +95,36 @@
 
     </div>
 
-    <!-- BOTTOM WIDE -->
+    <!-- BOTTOM -->
 
-    <div class="bottom-wide">
+    <div class="grid-item bottom-wide">
 
-      <div class="grid-item wide">
+      <img src="images/hero4.jpg" alt="">
 
-        <img src="https://picsum.photos/1400/500?4">
+      <div class="overlay-line"></div>
 
-        <div class="overlay-line"></div>
+    </div>
 
-      </div>
+    <!-- HERO TEXT -->
+
+    <div class="hero-text">
+
+      <h1>
+
+        <span class="accent">
+          Reliable
+        </span>
+
+        <br>
+
+        Wireless Technology
+
+      </h1>
+
+      <p>
+        通信を、より確実に。<br>
+        精密技術で未来を支える電子機器メーカー
+      </p>
 
     </div>
 
@@ -152,7 +138,7 @@
 
     <a href="company.html">企業情報</a>
 
-    <a href="products.html">製品</a>
+    <a href="products.html">製品情報</a>
 
     <a href="manufacturing.html">ものづくり</a>
 
@@ -160,7 +146,7 @@
 
     <a href="recruit.html">採用情報</a>
 
-    <a href="contact.html">問い合わせ</a>
+    <a href="contact.html">お問い合わせ</a>
 
   </section>
 
@@ -168,32 +154,41 @@
 
   <section class="news-section">
 
-    <h2>NEWS</h2>
+    <h2>
+      NEWS
+    </h2>
 
-    <a href="news.html"
-    class="news-item">
+    <a href="news1.html" class="news-item">
 
-      <span>2026.05.07</span>
+      <span>
+        2026.05.10
+      </span>
 
-      新型業務用無線機を公開しました
+      新製品発表のお知らせ
 
-    </a>
-
-    <a href="news.html"
-    class="news-item">
-
-      <span>2026.05.01</span>
-
-      コーポレートサイト公開のお知らせ
+      <span class="new-badge">
+        NEW
+      </span>
 
     </a>
 
-    <a href="news.html"
-    class="news-item">
+    <a href="news2.html" class="news-item">
 
-      <span>2026.04.22</span>
+      <span>
+        2026.04.22
+      </span>
 
-      技術展示会出展のお知らせ
+      展示会出展のお知らせ
+
+    </a>
+
+    <a href="news3.html" class="news-item">
+
+      <span>
+        2026.03.30
+      </span>
+
+      コーポレートサイトリニューアル
 
     </a>
 
@@ -203,51 +198,116 @@
 
   <section class="content-section">
 
+    <!-- COMPANY -->
+
     <div class="content-card">
 
-      <img src="https://picsum.photos/900/600?5">
+      <img src="images/company.jpg" alt="">
 
       <div class="content-text">
 
-        <h3>企業情報</h3>
+        <div class="section-number">
+          01
+        </div>
+
+        <div class="sub-en">
+          COMPANY
+        </div>
+
+        <h3>
+          企業情報
+        </h3>
 
         <p>
-          長年培った技術力と品質管理を基盤に、
-          信頼性の高い電子機器を製造しています。
+          長年培った無線技術と電子制御技術を軸に、
+          安定した製品開発を続けています。
         </p>
 
       </div>
 
     </div>
+
+    <!-- PRODUCTS -->
 
     <div class="content-card reverse">
 
-      <img src="https://picsum.photos/900/601?6">
+      <img src="images/products.jpg" alt="">
 
       <div class="content-text">
 
-        <h3>ものづくり</h3>
+        <div class="section-number">
+          02
+        </div>
+
+        <div class="sub-en">
+          PRODUCTS
+        </div>
+
+        <h3>
+          製品情報
+        </h3>
 
         <p>
-          精密な製造工程と厳格な品質検査によって、
-          安定した通信機器を提供しています。
+          業務用無線機を中心に、
+          幅広い現場で活躍する製品を展開しています。
         </p>
 
       </div>
 
     </div>
 
+    <!-- MANUFACTURING -->
+
     <div class="content-card">
 
-      <img src="https://picsum.photos/900/602?7">
+      <img src="images/making.jpg" alt="">
 
       <div class="content-text">
 
-        <h3>製品</h3>
+        <div class="section-number">
+          03
+        </div>
+
+        <div class="sub-en">
+          MANUFACTURING
+        </div>
+
+        <h3>
+          ものづくり
+        </h3>
 
         <p>
-          業務用無線機器・通信装置など、
-          多様な現場で活躍する製品を展開しています。
+          精密な品質管理と、
+          丁寧な生産工程による高品質な製品づくり。
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- RECRUIT -->
+
+    <div class="content-card reverse">
+
+      <img src="images/recruit.jpg" alt="">
+
+      <div class="content-text">
+
+        <div class="section-number">
+          04
+        </div>
+
+        <div class="sub-en">
+          RECRUIT
+        </div>
+
+        <h3>
+          採用情報
+        </h3>
+
+        <p>
+          次世代の技術開発を共に担う、
+          新たな人材を募集しています。
         </p>
 
       </div>
@@ -260,19 +320,21 @@
 
   <section class="twitter-section">
 
-    <h2>X / 最新情報</h2>
+    <h2>
+      OFFICIAL X
+    </h2>
 
     <div class="twitter-box">
 
       <a class="twitter-timeline"
+         data-height="500"
+         href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">
 
-      data-height="500"
-
-      href="https://twitter.com/TwitterDev">
-
-      Tweets by TwitterDev
+         Tweets by TwitterJP
 
       </a>
+
+      <script async src="https://platform.twitter.com/widgets.js"></script>
 
     </div>
 
@@ -282,17 +344,17 @@
 
   <footer class="footer">
 
-    <div class="footer-left">
+    <div>
 
-      <h3>WAVENIX ELECTRONICS</h3>
-
-      <p>
-        〒000-0000
-        東京都〇〇区〇〇1-2-3
-      </p>
+      <h3>
+        〇〇電子工業株式会社
+      </h3>
 
       <p>
-        TEL : 00-0000-0000
+        〒000-0000<br>
+        東京都〇〇区〇〇 1-2-3<br><br>
+
+        TEL：00-0000-0000
       </p>
 
     </div>
@@ -303,7 +365,7 @@
 
       <a href="company.html">企業情報</a>
 
-      <a href="products.html">製品</a>
+      <a href="products.html">製品情報</a>
 
       <a href="manufacturing.html">ものづくり</a>
 
@@ -311,16 +373,52 @@
 
       <a href="recruit.html">採用情報</a>
 
-      <a href="contact.html">問い合わせ</a>
+      <a href="contact.html">お問い合わせ</a>
 
     </div>
 
   </footer>
 
-  <script src="script.js"></script>
+  <!-- JS -->
 
-  <script async
-  src="https://platform.twitter.com/widgets.js">
+  <script>
+
+    function toggleMenu() {
+
+      document.getElementById("menu").classList.toggle("active");
+
+    }
+
+    /* HERO IMAGE SLIDE */
+
+    const images = [
+
+      "images/hero3.jpg",
+
+      "images/hero5.jpg",
+
+      "images/hero6.jpg"
+
+    ];
+
+    let current = 0;
+
+    const slideImage = document.getElementById("slide-image");
+
+    setInterval(() => {
+
+      current++;
+
+      if(current >= images.length){
+
+        current = 0;
+
+      }
+
+      slideImage.src = images[current];
+
+    }, 4000);
+
   </script>
 
 </body>
