@@ -9,6 +9,7 @@ body{
     color:#2b2b2b;
     font-family:'Noto Sans JP', sans-serif;
     line-height:1.9;
+    overflow-x:hidden;
 }
 
 /* =========================
@@ -114,6 +115,7 @@ body{
     position:relative;
     overflow:hidden;
     background:white;
+    transition:0.4s;
 }
 
 .grid-item img{
@@ -124,8 +126,26 @@ body{
     filter:brightness(0.88) saturate(0.85);
 }
 
+.grid-item:hover{
+    box-shadow:0 0 30px rgba(0,91,172,0.15);
+}
+
 .grid-item:hover img{
     transform:scale(1.04);
+}
+
+/* IMAGE GRADIENT */
+
+.grid-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0)
+    );
 }
 
 /* GOLD FRAME */
@@ -136,6 +156,7 @@ body{
     border:1px solid rgba(184,155,79,0);
     transition:0.4s;
     pointer-events:none;
+    z-index:5;
 }
 
 .grid-item:hover .overlay-line{
@@ -178,7 +199,7 @@ body{
     justify-content:center;
     flex-wrap:wrap;
     gap:16px;
-    padding:90px 7%;
+    padding:100px 7%;
 }
 
 .quick-links a{
@@ -206,7 +227,7 @@ body{
 .news-section{
     position:relative;
     padding:80px 10%;
-    margin:0 10% 120px;
+    margin:0 10% 140px;
     background:#f4f7fa;
     border:1px solid #dbe3ea;
 }
@@ -237,6 +258,17 @@ body{
     color:#005bac;
     margin-right:24px;
     font-weight:600;
+}
+
+/* NEW BADGE */
+
+.new-badge{
+    color:#005bac;
+    border:1px solid #005bac;
+    padding:2px 8px;
+    font-size:10px;
+    margin-left:12px;
+    letter-spacing:1px;
 }
 
 /* NEWS DECORATION */
@@ -270,7 +302,7 @@ body{
 ========================= */
 
 .content-section{
-    padding:0 10% 120px;
+    padding:0 10% 140px;
 }
 
 .content-card{
@@ -279,9 +311,9 @@ body{
     display:flex;
     align-items:center;
     gap:70px;
-    margin-bottom:80px;
+    margin-bottom:100px;
     background:#f4f7fa;
-    padding:40px;
+    padding:50px;
     border:1px solid #dbe3ea;
 }
 
@@ -296,13 +328,50 @@ body{
 
 .content-text{
     flex:1;
+    position:relative;
 }
+
+/* SECTION NUMBER */
+
+.section-number{
+    font-size:80px;
+    color:rgba(0,91,172,0.08);
+    font-family:'Noto Serif JP', serif;
+    position:absolute;
+    top:-50px;
+    left:0;
+    line-height:1;
+    pointer-events:none;
+}
+
+/* ENGLISH SUB */
+
+.sub-en{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#005bac;
+    margin-bottom:10px;
+}
+
+/* TITLE */
 
 .content-text h3{
     font-family:'Noto Serif JP', serif;
     color:#4f647c;
     font-size:42px;
     margin-bottom:28px;
+    position:relative;
+}
+
+/* TITLE LINE */
+
+.content-text h3::after{
+    content:"";
+    display:block;
+    width:60px;
+    height:1px;
+    background:#b89b4f;
+    margin-top:14px;
 }
 
 /* FLOATING DECORATION */
@@ -310,10 +379,10 @@ body{
 .content-card::before{
     content:"";
     position:absolute;
-    top:-30px;
-    right:-30px;
-    width:58px;
-    height:58px;
+    top:-22px;
+    right:-22px;
+    width:42px;
+    height:42px;
     background:#005bac;
     opacity:0.78;
     z-index:3;
@@ -322,13 +391,25 @@ body{
 .content-card::after{
     content:"";
     position:absolute;
-    top:-46px;
-    right:-12px;
-    width:64px;
-    height:64px;
+    top:-36px;
+    right:-8px;
+    width:52px;
+    height:52px;
     border:3px solid #b89b4f;
     background:transparent;
     z-index:4;
+}
+
+/* REVERSE DECORATION */
+
+.content-card.reverse::before{
+    left:-22px;
+    right:auto;
+}
+
+.content-card.reverse::after{
+    left:-8px;
+    right:auto;
 }
 
 /* =========================
@@ -336,7 +417,7 @@ body{
 ========================= */
 
 .twitter-section{
-    padding:0 10% 120px;
+    padding:0 10% 140px;
 }
 
 .twitter-section h2{
@@ -359,7 +440,7 @@ body{
 .footer{
     background:#4f647c;
     color:white;
-    padding:70px 10%;
+    padding:80px 10%;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
