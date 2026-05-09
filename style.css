@@ -6,11 +6,8 @@
 
 body{
     background:#fcfcfc;
-
     color:#2b2b2b;
-
     font-family:'Noto Sans JP', sans-serif;
-
     line-height:1.9;
 }
 
@@ -18,21 +15,13 @@ body{
 
 .header{
     background:#ffffff;
-
     border-bottom:1px solid #e4e8ec;
-
     padding:24px 7%;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     position:sticky;
-
     top:0;
-
     z-index:1000;
 }
 
@@ -44,11 +33,8 @@ body{
 
 .hamburger{
     font-size:32px;
-
     color:#005bac;
-
     cursor:pointer;
-
     transition:0.3s;
 }
 
@@ -60,21 +46,13 @@ body{
 
 .menu{
     position:absolute;
-
     top:100px;
-
     right:7%;
-
     background:white;
-
     border:1px solid #b89b4f;
-
     min-width:260px;
-
     display:none;
-
     flex-direction:column;
-
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
@@ -84,19 +62,14 @@ body{
 
 .menu a{
     text-decoration:none;
-
     color:#2b2b2b;
-
     padding:18px 24px;
-
     border-bottom:1px solid #ececec;
-
     transition:0.3s;
 }
 
 .menu a:hover{
     background:#005bac;
-
     color:white;
 }
 
@@ -104,39 +77,28 @@ body{
 
 .hero-grid{
     background:#4f647c;
-
     padding:70px 7%;
-
     position:relative;
 }
 
 .hero-grid::after{
     content:"";
-
     display:block;
-
     height:4px;
-
     background:#005bac;
-
     margin-top:30px;
 }
 
 .top-grid{
     display:grid;
-
     grid-template-columns:2fr 1fr;
-
     gap:18px;
-
     margin-bottom:18px;
 }
 
 .right-column{
     display:grid;
-
     grid-template-rows:1fr 1fr;
-
     gap:18px;
 }
 
@@ -146,21 +108,15 @@ body{
 
 .grid-item{
     position:relative;
-
     overflow:hidden;
-
     background:white;
 }
 
 .grid-item img{
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-
     transition:0.6s;
-
     filter:brightness(0.88) saturate(0.85);
 }
 
@@ -172,25 +128,17 @@ body{
 
 .hero-text{
     position:absolute;
-
     left:50px;
-
     bottom:50px;
-
     color:white;
-
     z-index:10;
 }
 
 .hero-text h1{
     font-family:'Noto Serif JP', serif;
-
     font-size:42px;
-
     margin-bottom:20px;
-
     letter-spacing:2px;
-
     line-height:1.3;
 }
 
@@ -200,7 +148,6 @@ body{
 
 .hero-text p{
     font-size:15px;
-
     opacity:0.9;
 }
 
@@ -208,13 +155,9 @@ body{
 
 .overlay-line{
     position:absolute;
-
     inset:18px;
-
     border:1px solid rgba(184,155,79,0);
-
     transition:0.4s;
-
     pointer-events:none;
 }
 
@@ -226,81 +169,55 @@ body{
 
 .quick-links{
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
     gap:16px;
-
     padding:90px 7%;
 }
 
 .quick-links a{
     text-decoration:none;
-
     color:#4f647c;
-
     border:1px solid #b89b4f;
-
     padding:12px 28px;
-
     background:white;
-
     transition:0.3s;
-
     font-size:14px;
-
     letter-spacing:1px;
 }
 
 .quick-links a:hover{
     background:#005bac;
-
     border-color:#005bac;
-
     color:white;
-
     transform:translateY(-2px);
 }
 
 /* NEWS */
 
 .news-section{
+    position:relative;
     padding:80px 10%;
-
     margin:0 10% 120px;
-
     background:#f4f7fa;
-
     border:1px solid #dbe3ea;
 }
 
 .news-section h2{
     font-family:'Noto Serif JP', serif;
-
     color:#4f647c;
-
     font-size:42px;
-
     margin-bottom:40px;
-
     border-bottom:1px solid #b89b4f;
-
     padding-bottom:12px;
 }
 
 .news-item{
     display:block;
-
     text-decoration:none;
-
     color:#2b2b2b;
-
     padding:24px 0;
-
     border-bottom:1px solid #dbe3ea;
-
     transition:0.3s;
 }
 
@@ -310,10 +227,32 @@ body{
 
 .news-item span{
     color:#005bac;
-
     margin-right:24px;
-
     font-weight:600;
+}
+
+/* NEWS CORNER */
+
+.news-section::before{
+    content:"";
+    position:absolute;
+    top:-14px;
+    left:-14px;
+    width:40px;
+    height:40px;
+    border-top:4px solid #005bac;
+    border-left:4px solid #005bac;
+}
+
+.news-section::after{
+    content:"";
+    position:absolute;
+    top:-4px;
+    left:-4px;
+    width:18px;
+    height:18px;
+    border-top:3px solid #b89b4f;
+    border-left:3px solid #b89b4f;
 }
 
 /* CONTENT */
@@ -323,18 +262,13 @@ body{
 }
 
 .content-card{
+    position:relative;
     display:flex;
-
     align-items:center;
-
     gap:70px;
-
     margin-bottom:80px;
-
     background:#f4f7fa;
-
     padding:40px;
-
     border:1px solid #dbe3ea;
 }
 
@@ -344,7 +278,6 @@ body{
 
 .content-card img{
     width:50%;
-
     filter:brightness(0.9) saturate(0.85);
 }
 
@@ -354,12 +287,34 @@ body{
 
 .content-text h3{
     font-family:'Noto Serif JP', serif;
-
     color:#4f647c;
-
     font-size:42px;
-
     margin-bottom:28px;
+}
+
+/* CORNER DECORATION */
+
+.content-card::before{
+    content:"";
+    position:absolute;
+    top:-14px;
+    right:-14px;
+    width:38px;
+    height:38px;
+    border-top:4px solid #b89b4f;
+    border-right:4px solid #b89b4f;
+    opacity:0.9;
+}
+
+.content-card::after{
+    content:"";
+    position:absolute;
+    top:-2px;
+    right:-2px;
+    width:28px;
+    height:28px;
+    background:#005bac;
+    opacity:0.95;
 }
 
 /* X */
@@ -370,19 +325,14 @@ body{
 
 .twitter-section h2{
     font-family:'Noto Serif JP', serif;
-
     color:#4f647c;
-
     font-size:42px;
-
     margin-bottom:40px;
 }
 
 .twitter-box{
     background:#f4f7fa;
-
     border:1px solid #dbe3ea;
-
     padding:30px;
 }
 
@@ -390,41 +340,29 @@ body{
 
 .footer{
     background:#4f647c;
-
     color:white;
-
     padding:70px 10%;
-
     display:flex;
-
     justify-content:space-between;
-
     flex-wrap:wrap;
-
     gap:50px;
 }
 
 .footer h3{
     font-family:'Noto Serif JP', serif;
-
     margin-bottom:20px;
-
     color:#dfeeff;
 }
 
 .footer-links{
     display:flex;
-
     flex-wrap:wrap;
-
     gap:22px;
 }
 
 .footer-links a{
     text-decoration:none;
-
     color:white;
-
     transition:0.3s;
 }
 
@@ -440,13 +378,9 @@ body{
 
 .page-title h1{
     font-family:'Noto Serif JP', serif;
-
     color:#4f647c;
-
     font-size:54px;
-
     border-bottom:1px solid #b89b4f;
-
     padding-bottom:20px;
 }
 
@@ -456,13 +390,11 @@ body{
 
 .page-content h2{
     color:#005bac;
-
     margin:50px 0 20px;
 }
 
 .page-content img{
     width:100%;
-
     margin-top:40px;
 }
 
@@ -470,19 +402,14 @@ body{
 
 .product-grid{
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:40px;
-
     padding:0 10% 120px;
 }
 
 .product-card{
     background:#f4f7fa;
-
     border:1px solid #dbe3ea;
-
     transition:0.3s;
 }
 
@@ -496,7 +423,6 @@ body{
 
 .product-card h3{
     color:#005bac;
-
     padding:24px 24px 10px;
 }
 
